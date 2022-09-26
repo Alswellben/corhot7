@@ -1,0 +1,95 @@
+ /* internal styling below */
+        /* selecting by tagname. use #idname {style here}. the #idname is used to reference the tagenmae inside the body tag */
+        p{
+            color: blue;
+            border: 1px solid red;
+        }
+        /* selecting using id */
+        #blue{
+            background-color: blue;
+            color: white;
+        }
+        /* selecting by class. use .classname {styles here}. the .classname is used to reference the tagname inside the body tag */
+        .Alswell{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 2rem;
+            color: blue;
+            border-right: purple solid 2px;
+            border-left: 3px solid gold;
+            background-color: gray;
+        }
+        body{
+          font-size: calc(15% + 2.5vh);
+        }
+
+        .img1{
+            width: 200px;
+            height: 200px;
+        }
+        .img2{
+            width: 200px;
+            height: 200px;
+        }
+
+/* other screen(tablets and andriod phones) styles */
+@media(max-width: 700px) {
+    body{
+        background-color: gray;
+        color: black;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        /* font-size: 3vw; */
+        /* font-size: calc(15% + 2.5vh); */
+        /*  the font-size using calc() makes sure that as the screen width reduces, the font size grows to be readable */
+    }
+
+}
+
+/* adding background images */
+.bg1{
+    width: 100%;
+    min-height: 90vh;
+    background-image: url('./img/IMG_20190604_160635.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.bg2{
+    width: 100%;
+    min-height: 90vh;
+    background-image: url('https://media.istockphoto.com/photos/taj-mahal-mausoleum-in-agra-picture-id1146517111?k=20&m=1146517111&s=612x612&w=0&h=vHWfu6TE0R5rG6DJkV42Jxr49aEsLN0ML-ihvtim8kk=');
+    background-repeat: no-repeat;
+    background-size: 100% 95%;
+
+}
+
+body{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPvgOPrLfPpTyns0NnVRXsR71xT9o7JWMnhUSxwrYQ&s');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    color: white;
+}
+    /* changing the color and underline line on the anchor tag */
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+}
+@media(max-width: 400px) {
+    /* Note: all other styles will still be applied on this condition, only the one you overide will change */
+    body{
+        background-color: black;
+        color: white;
+    }
+    p{
+        color: white;
+    }
+}
+    
+    
+
+
+
+
+
+
